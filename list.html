@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <link rel="stylesheet" href="styles/list.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+    #scroll{
+        height: 300px;
+        width: 300px;
+    }
+
+</style>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <header class="fixed-header">
+        <img src="assests/images/logo.png" width="60px" height="60px"/>
+        <button onclick="document.location='login.html'" id="left" class="button2">LOGIN</button>
+        </header>
+        <br><br><br><br>
+    <ul style="text-align: center;">
+ <strong><button style="font-size: xx-large;" class="button4" onclick="document.location='#scroll'">List View</button></strong> &emsp; 
+ <strong><button style="font-size: xx-large;" class="button4" onclick="document.location='#map'">Map View</button></strong> &emsp; 
+</ul>
+<a href="detail.html">
+<div style="float: right;" id="container">
+<img id="scroll" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
+<h3>Radisson Blu Hotel</h3>
+<p>5 star<br><br>
+New Delhi</p></div>
+</a>
+<div id="container">
+<img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" width="300px" height="300px"/>
+<h3>The Lalit Hotel</h3>
+<p>4.5 star<br><br>
+New Delhi</p>
+</div>
+<div id="container">
+<img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" width="300px" height="300px"/>
+<h3>The Taj Hotel</h3>
+<p>4 star<br><br>
+New Delhi</p>
+</div>
+<img id="map" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"/>
+<p style="margin-left: 30%;">Map View</p>
+<footer>
+    <button style="margin-left: 2%;" style="float: left;" onclick="document.location='contact.html'" class="button" >Contact Us</button>
+    <a style="float: right;" href="https://www.facebook.com/"><img src="assests/images/facebook.png" width="22px" height="20px"/></a>
+    <a style="float: right;" href="https://www.instagram.com/"><img src="assests/images/instagram.png" width="22px" height="20px"/></a>
+    <a style="float: right;" href="https://www.twitter.com/"><img src="assests/images/twitter.png" width="22px" height="20px"/></a>
+   <br>
+   <div id="center"><cite>2022&copy;Premium Hotels</cite></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+    background-color: #e0e0e0;
+    margin-left: 0%;
+}
+footer{
+    background-color: rosybrown;
+    margin: 0%;
+}
+#make{
+    text-align: left;
+    background-color: rgb(132,136,139);
+    height: 650px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#left{
+    float: right;
+    margin: 15px;
+}
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background-color: rosybrown;;
+    padding:  0px;
+    color: #fff;
+}
+#center{
+    text-align: center;
+}
