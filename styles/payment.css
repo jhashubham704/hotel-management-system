@@ -1,29 +1,82 @@
-body{
-    background-color: #e0e0e0;
-    margin-left: 0%;
+article img{
+    height: 500px;
+    width: 500px;
 }
-footer{
-    background-color: rosybrown;
-    margin: 0%;
+article {
+    margin-top: 6%;
+    margin-bottom: 6%;
+    display: flex;
+    flex-direction: column;
+
 }
-#make{
-    text-align: left;
+article a{
+    text-decoration: none;
+    color: black;
+}
+article .content-first{
     background-color: rgb(132,136,139);
-    height: 650px;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 600px;
+    height: 20%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
 }
-#left{
-    float: right;
-    margin: 15px;
+
+article .content-first img{
+    height: 200px;
+    width: 270px;
+
 }
-.fixed-header, .fixed-footer{
-    width: 100%;
-    position: fixed;        
-    background-color: rosybrown;;
-    padding:  0px;
-    color: #fff;
+article .content-first .img-desc{
+    height: 70%;
+    width: 50%;
+    margin: auto;
+
 }
-#center{
-    text-align: center;
+
+article .content-sec {
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rosybrown;
+}
+article .content-sec .desc{
+    /* margin: 2%; */
+    float: left;
+    margin-right: 15%;
+}
+article .content-sec .tariff{
+    margin-right: 15%;
+}
+article .content-sec .tariff{
+ 
+}
+
+@media screen and (min-device-width: 576px) and (max-device-width: 768px){
+    article{
+        margin-top: 60px;
+        height: 800px;
+    }
+    article .content-first{
+        width: 500px;
+        height: 20%;
+    }
+    article .content-first img{
+        height: 160px;
+        width: 270px;
+    
+    }
+}
+@media screen and (max-device-width: 576px) {
+    article .content-sec {
+       width: 590px;
+    }
 }

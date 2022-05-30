@@ -1,64 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lists</title>
+    <title>List</title>
     <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="styles/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-</head>
-<style>
-    html{
-        scroll-behavior: smooth;
-    }
-    #scroll{
-        height: 300px;
-        width: 300px;
-    }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
 <body>
+    <header>
+        <nav> 
+            <div class="img">
+                <a href="index.html"><img width="200px" src="/assests/images/logo.png" alt="logo"></a>
+            </div>
+            <div class="anchor">
+                <button type="button" class="btn btn-light btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    LOGIN
+                </button>
+            </div>
+
+        </nav>
+    </header>
+    <article>
+        <ul>
+            <li><a href="#list-view" class="btn btn-primary" active>List View</a></li>
+            <li><a href="#map-view" class="btn btn-secondary">Map View</a></li>
+
+        </ul>
+        <div id="list-view">
+            <a href="detail.html">
+                <div class="hotels">
+                    <div class="hotel">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                            alt="">
+                        <div class="text">
+                            <a href="">
+                                <h3>Radisson Blu Hotel</h3>
+                            </a>
+                            <a href="">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </a>
+                            <a href="">
+                                <p>New Delhi</p>
+                            </a>
+                        </div>
+                    </div>
+            </a>
+
+            <div class="hotel">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="">
+                <div class="text">
+                    <h3>The Lalit New Delhi</h3>
+
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p>New Delhi</p>
+                </div>
+            </div>
+            <div class="hotel">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="">
+                <div class="text">
+                    <h3>Taj Palace</h3>
+
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p>New Delhi</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="map-view">
+            <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="">
+
+        </div>
+
+
+    </article>
+    <footer>
+        <a class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
+        <p>&copy 2022 ROOM SEARCH PVT LTD</p>
+        <div class="logo">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="/assests/images/facebook.png" alt="">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="/assests/images/instagram.png" alt="">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="/assests/images/twitter.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <form action="">
+                        <label for="uname">Username:  </label>
+                        <input type="text" name="uname" id="uname">
+                        <br>
+                        <label for="pass">Password:</label>
+                        <input type="password" name="pass" id="pass">
+                    </form> -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Contact Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for reaching out!!!</p>
+                    <p>Please enter your email and we will get back to you</p>
+                    <form action="index.html">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        <br>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" value="Submit" class="btn btn-primary btn-sm">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <header class="fixed-header">
-        <img src="assests/images/logo.png" width="60px" height="60px"/>
-        <button onclick="document.location='login.html'" id="left" class="button2">LOGIN</button>
-        </header>
-        <br><br><br><br>
-    <ul style="text-align: center;">
- <strong><button style="font-size: xx-large;" class="button4" onclick="document.location='#scroll'">List View</button></strong> &emsp; 
- <strong><button style="font-size: xx-large;" class="button4" onclick="document.location='#map'">Map View</button></strong> &emsp; 
-</ul>
-<a href="detail.html">
-<div style="float: right;" id="container">
-<img id="scroll" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"/>
-<h3>Radisson Blu Hotel</h3>
-<p>5 star<br><br>
-New Delhi</p></div>
-</a>
-<div id="container">
-<img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" width="300px" height="300px"/>
-<h3>The Lalit Hotel</h3>
-<p>4.5 star<br><br>
-New Delhi</p>
-</div>
-<div id="container">
-<img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" width="300px" height="300px"/>
-<h3>The Taj Hotel</h3>
-<p>4 star<br><br>
-New Delhi</p>
-</div>
-<img id="map" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"/>
-<p style="margin-left: 30%;">Map View</p>
-<footer>
-    <button style="margin-left: 2%;" style="float: left;" onclick="document.location='contact.html'" class="button" >Contact Us</button>
-    <a style="float: right;" href="https://www.facebook.com/"><img src="assests/images/facebook.png" width="22px" height="20px"/></a>
-    <a style="float: right;" href="https://www.instagram.com/"><img src="assests/images/instagram.png" width="22px" height="20px"/></a>
-    <a style="float: right;" href="https://www.twitter.com/"><img src="assests/images/twitter.png" width="22px" height="20px"/></a>
-   <br>
-   <div id="center"><cite>2022&copy;Premium Hotels</cite></div>
-</footer>
 </body>
+
 </html>
