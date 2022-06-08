@@ -126,7 +126,6 @@ article .cards .card:hover .image {
     }
 
     article .cards .card {
-        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -149,8 +148,6 @@ article .cards .card:hover .image {
         outline: none;
     }
     article .cards {
-
-        display: grid;
         /* grid-template-columns: auto; */
         justify-content: space-evenly;
         align-content: space-evenly;
