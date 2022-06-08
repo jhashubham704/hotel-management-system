@@ -82,10 +82,9 @@ article .cards .card .image {
 
 .middle {
     position: absolute;
-    top: 50%;
-    left: 45px;
+    top: 44%;
+    left: 53px;
     opacity: -1;
-    margin: auto;
 }
 
 .middle .text {
