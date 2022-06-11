@@ -6,7 +6,8 @@ article {
 
 article .anchor {
     text-align: center;
-    margin: 7%;
+    margin: -5%;
+    padding: 67px;
 }
 
 article .anchor a {
@@ -42,7 +43,7 @@ article .search {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 170px;
 }
 
 article .cards {
@@ -170,4 +171,7 @@ article .cards .card:hover .image {
         width: 150px;
         margin-bottom: 20px;
     }
+}
+#none{
+    display: none;
 }
