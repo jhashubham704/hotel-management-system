@@ -14,19 +14,19 @@ function expand() {
       x.style.display = 'none';
     }
   }
-
- function login(){
-    var xhttp= new XMLHttpRequest();
-    xhttp.onreadystatechange=function(){
-        console.log(this.readyState);
-        if(this.readyState===4 && this.status===200){
-            var data=this.response;
-            var Jdata=JSON.parse(data); 
-            alert("login Successfully");
-        }else{
-            alert("Invalid login");
-        }
- }
- xhttp.open('GET',"login.txt", true);
- xhttp.send();
+  var c= document.getElementById('uname');
+  var d= document.getElementById('psw');
+  function login(){
+  var xhr = new XMLHttpRequest(); 
+  var n= c.value;
+  var p= d.value;   
+  var userData = {        
+      username : n,        
+      password : p
+  }    
+  xhr.open('POST',"login.txt");    
+  xhr.send(JSON.stringify(userData));
+  alert("Login Successfully");
+  document.getElementById('change').innerHTML="LOG OUT";
 }
+
