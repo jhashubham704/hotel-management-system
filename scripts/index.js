@@ -16,17 +16,24 @@ function expand() {
   }
   var c= document.getElementById('uname');
   var d= document.getElementById('psw');
+  var log= 0;
   function login(){
-  var xhr = new XMLHttpRequest(); 
-  var n= c.value;
-  var p= d.value;   
-  var userData = {        
-      username : n,        
-      password : p
-  }    
-  xhr.open('POST',"login.txt");    
-  xhr.send(JSON.stringify(userData));
-  alert("Login Successfully");
-  document.getElementById('change').innerHTML="LOG OUT";
+    localStorage.setItem("username","admin");
+  localStorage.setItem("password","admin");
+  var u=c.value;
+  var j=d.value;
+    var username=localStorage.getItem("username");
+    var password=localStorage.getItem("password");
+    if(u===username && j===password){
+      alert("Login Successfully");
+      setTimeout(()=>{
+        document.getElementById('out').style.display="inline";
+      document.getElementById('in').style.display="none";
+      }, 36000);
+    }else{
+      alert("Invalid");
+    }
 }
+
+
 

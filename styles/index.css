@@ -100,6 +100,7 @@ article .cards .card:hover .middle {
 article .cards .card:hover .image {
     /* opacity: 0.5; */
     filter: brightness(40%);
+    cursor: pointer;
 }
 
 @media screen and (min-device-width: 576px) and (max-device-width: 768px) {
